@@ -1,0 +1,124 @@
+:root{
+    --themeColor:linear-gradient(to right, #4e4eec, #636366);
+    
+    
+}
+body{
+    background-color: rgb(163, 199, 31);
+    position: relative;
+    min-height: 89vh;
+}
+
+.minHeight{
+    min-height: 72vh;
+}
+.marginTop{
+    margin-top: 100px;
+}
+.marginBottomReduce{
+    margin-bottom: 20px !important;
+}
+
+.pushRight{
+    position: absolute !important;
+    left:60px !important;
+    /* top: 13px !important; */
+
+}
+
+/* login form styles */
+
+.login{
+  padding: 3%;
+  margin-left: 45%;
+  background-color:burlywood;
+  height: 15em;
+  width: 16em;
+  margin-top: 9%;
+  border: black;
+  border-style:solid ;
+  
+  margin-right: 4%;
+  
+  
+}
+.h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form__btn{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4c04aa;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.form__btn:hover {background-color: #b82a65}
+
+.form__btn:active {
+  background-color: #421fdd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+main {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .stepper {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+  }
+
+  
+
+  .errorMsg{
+    position: absolute;
+    top:-100%;
+    left:50%;
+    width:40%;
+    padding: 0.5% 5%;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    border-radius: 20px;
+    z-index: 2000;
+    text-align: right !important;
+}
+.errorMsg::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(0, 0, 0, 0.753);
+    position: absolute;
+    bottom:-54%;
+    left:67%;
+    z-index: 2000;
+}
+.errorMsg.hidden{
+    display: none;
+}
+
+canvas{
+  position: absolute;
+  height:100%; 
+  width: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  background: transparent;
+}
